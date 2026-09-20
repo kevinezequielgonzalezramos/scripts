@@ -49,7 +49,6 @@ fi
 # fija el orden; 00-config.sh siempre primero porque el resto depende de
 # sus variables).
 for modulo in "${LIB_DIR}"/*.sh; do
-    # shellcheck source=/dev/null
     source "$modulo"
 done
 
